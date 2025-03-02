@@ -40,4 +40,21 @@ This application is designed specifically for farmers, allowing them to call a d
 2. **Install all the required dependancies:**
    ```bash
    pip3 install fastapi uvicorn openai requests python-dotenv twilio langchain langchain-openai langchain-community aiohttp pyngrok PyMuPDF faiss-cpu
-
+3. Sign up for a Twilio account and then purchase a phone number by following Twilio's step-by-step instructions. After obtaining your number, navigate to the "Account Info" section on your dashboard and copy your Account SID and Auth Token.
+4. Create a .env file and paste the copies Account SID and Auth Token as:
+   ```bash
+   TWILIO_ACCOUNT_SID="ACXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+   TWILIO_AUTH_TOKEN="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+5. Create an account from OpenAI, go to API Key then create your own API key, copy the api key and save it in .env file.
+   ```bash
+   OPENAI_API_KEY="ENTER_YOUR_AP_KEY"
+6. Create a folder named "documents" and populate it with sample PDF files and research papers focused on agriculture.
+7. Install ngrok by first creating an account at ngrok.com. Once registered, go to the "Your Authentication" section, and then execute the command ngrok authtoken YOUR_AUTHTOKEN in your terminal. This command will generate your XML configuration file.
+8. Now all your dependencies are install and configured, finally on the commmand line run your FastApi using this command:
+   ```bash
+   uvicorn main:app --host 0.0.0.0 --port 8000
+9. Your .env file will be updated with an NGROK_URL. Copy that URL and head over to your Twilio Console. Under Develop > Phone Numbers > Active Number, click on your phone number and, in the Voice Configuration section, paste the NGROK_URL appended with /twilio/voice as your webhook URL. Make sure it matches the provided example, then click Save Configuration.
+   ```bash
+   https://xxxx-xxxx-xxx-xxxx-xxxx-xxxx-xxxx-xxxx-xxxx.ngrok-free.app/twilio/voice
+10. You're all set—just call the number and you're ready to go!
+   
