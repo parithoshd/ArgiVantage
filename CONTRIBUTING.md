@@ -86,6 +86,22 @@ git push origin feature/your-feature-name
 4. Add a description of your changes.
 5. Click Create Pull Request.
 
+### 6️⃣ Code Review Process
+1. A project maintainer will review your pull request.
+2. Feedback may be given; please address any requested changes.
+3. Once approved, your code will be merged into the main branch.
+
+### Contribution Guidelines
+- Open an issue before working on major changes.
+- Be respectful when discussing in issues and pull requests.
+- Keep pull requests small and focused on a single change.
+- Write meaningful commit messages.
+
+### Community & Support
+- Join our GitHub Discussions for queries.
+- Report issues using GitHub Issues.
+
+Thank you for contributing to Agrivantage! 🎉🚀
 
 
 
