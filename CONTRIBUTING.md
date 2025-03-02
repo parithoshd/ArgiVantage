@@ -44,12 +44,48 @@ Before you start, make sure you have the following installed:
 4. Configure Twilio Webhook
 5. i.   Go to Twilio Console
    ii.  Navigate to Phone Numbers → Active Numbers.
-   iii. Under Voice Configuration, paste the ngrok URL followed by /twilio/voice.
+   iii. Under Voice Configuration, paste the ngrok URL followed by /twilio/voice.   
    ```sh
    https://your-ngrok-url.ngrok-free.app/twilio/voice
 6. Click Save
 ### 5️⃣ Submitting a Contribution
 📌 Creating a New Branch
 Before making any changes, create a new branch:
+
+```sh
+git checkout -b feature/your-feature-name
+```
+
+🛠 Making Changes
+Follow PEP8 guidelines for Python code.
+Add comments where necessary.
+Ensure the code is readable and well-structured.
+✅ Testing Your Changes
+Make sure the changes don’t break existing features:
    ```sh
-   git checkout -b feature/your-feature-name
+   pytest
+```
+
+📤 Committing Your Changes
+1. Stage your changes:
+```sh
+git add .
+```
+2. Commit with a meaningful message:
+```sh
+git commit -m "Added feature: Description of the feature"
+```
+3. Push to your fork:
+```sh
+git push origin feature/your-feature-name
+```
+### 🔃 Creating a Pull Request
+1. Go to your repository on GitHub.
+2. Click New Pull Request.
+3. Select the main branch as the base and your feature branch as the compare branch.
+4. Add a description of your changes.
+5. Click Create Pull Request.
+
+
+
+
