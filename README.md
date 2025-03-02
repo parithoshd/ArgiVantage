@@ -37,3 +37,4 @@ This application is designed specifically for farmers, allowing them to call a d
    ```bash
    git clone https://github.com/yourusername/fastapi-twilio-voice-bot.git
    cd fastapi-twilio-voice-bot
+2. **Install all the required dependancies:**
