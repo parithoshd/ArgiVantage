@@ -38,3 +38,6 @@ This application is designed specifically for farmers, allowing them to call a d
    git clone https://github.com/yourusername/fastapi-twilio-voice-bot.git
    cd fastapi-twilio-voice-bot
 2. **Install all the required dependancies:**
+   ```bash
+   pip3 install fastapi uvicorn openai requests python-dotenv twilio langchain langchain-openai langchain-community aiohttp pyngrok PyMuPDF faiss-cpu
+
