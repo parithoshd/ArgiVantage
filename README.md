@@ -5,6 +5,8 @@
 
 This application is designed specifically for farmers, allowing them to call a dedicated number provided through Twilio to ask any agriculture-related questions. Even in areas with limited or no personal internet access, farmers can simply use a basic phone connection to reach the system, ensuring they have access to valuable, timely information about various agricultural practices.
 
+#Requirements
+
 - **FastAPI:** Serves as the web framework to handle incoming HTTP requests.
 - **Twilio:** Manages incoming voice calls and recording via its webhook.
 - **OpenAI Whisper API:** Transcribes recorded audio into text.
